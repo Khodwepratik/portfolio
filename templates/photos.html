@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gallery | Pratik Haridas Khodwe</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <link rel="stylesheet" href="static\css\animations.css">
+    <link rel="icon" type="image/x-icon" href="static\images\favicon.ico">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Pratik Haridas Khodwe</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/photos" class="active">Photos</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="hero gallery-hero fade-in">
+        <h2>📸 Achievements & Memories</h2>
+        <p class="slide-up">Explore some moments, awards, and achievements I've captured throughout my journey.</p>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery fade-in">
+        <div class="gallery-grid">
+            {% for photo in photos %}
+            <div class="gallery-card slide-up">
+                <img src="{{ url_for('static', filename=photo.image_path) }}" alt="{{ photo.title }}">
+                <div class="card-content">
+                    <h3>{{ photo.title }}</h3>
+                    <p>{{ photo.description[:80] }}...</p>
+                    <a href="{{ photo.read_more_link }}" class="btn">Read More</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content fade-in">
+            <p>© 2025 Pratik Haridas Khodwe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static\js\animation.js"></script>
+</body>
+</html>

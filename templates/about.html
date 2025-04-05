@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Pratik Khodwe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Pratik Haridas Khodwe</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/photos">Photos</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero About Section -->
+    <section class="hero about-hero fade-in">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">👨‍💻 About Me</h2>
+                <p class="slide-up">
+                    I’m <strong>Pratik Haridas Khodwe</strong>, an <strong>AI Engineer, Developer, and Freelancer</strong>
+                    currently pursuing M.Tech in Artificial Intelligence at SGGS IE&T, Nanded.
+                </p>
+                <p class="slide-up">
+                    With a strong passion for <strong>Machine Learning, Web Development, and Quantum Computing</strong>,
+                    I specialize in crafting scalable, intelligent systems that drive innovation. Whether it's building 
+                    AI-powered applications, designing engaging web platforms, or diving into the fascinating world 
+                    of quantum algorithms, I'm always exploring the frontiers of technology.
+                </p>
+                <p class="slide-up">
+                    I actively work on projects in <strong>Natural Language Processing (NLP)</strong>, 
+                    <strong>Quantum Machine Learning (QML)</strong>, and <strong>Computer Vision</strong>. 
+                    I also mentor students and contribute to research in AI and digital signal/image processing.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Pratik Khodwe" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts / Highlights Section -->
+    <section class="highlights">
+        <div class="container grid-3 fade-in">
+            <div class="highlight-card slide-up">
+                <h3>🎓 Education</h3>
+                <p>M.Tech in Artificial Intelligence, SGGSIE&T Nanded</p>
+            </div>
+            <div class="highlight-card slide-up">
+                <h3>⚙️ Tech Stack</h3>
+                <p>Python, Flask, Django, HTML/CSS, JS, SQL, AWS, Qiskit</p>
+            </div>
+            <div class="highlight-card slide-up">
+                <h3>🌐 Domain Expertise</h3>
+                <p>Machine Learning, NLP, Quantum Computing, Web Development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content fade-in">
+            <p>© 2025 Pratik Haridas Khodwe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="static\js\animation.js"></script>
+
+</body>
+</html>
