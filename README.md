@@ -5,6 +5,8 @@ It showcases my professional profile, projects, blogs, and contact information �
 
 🔗 **Live Repo**: [GitHub Repo](https://github.com/Khodwepratik/portfolio)
 
+hosted with Render Template 
+
 ---
 
 ## 🚀 Features
